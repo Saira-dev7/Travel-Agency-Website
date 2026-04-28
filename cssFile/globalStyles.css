@@ -1,0 +1,290 @@
+/* =========================================================
+   DESIGN SYSTEM
+========================================================= */
+:root {
+  --brand-primary-color: #003580;
+  --brand-secondary-color: #00b4d8;
+  --brand-third-color: #ff9f1c;
+  --brand-fourth-color: #2ec4b6;
+  --brand-accent-color: #e71d36;
+
+  --bg-main: #f4f7f6;
+  --bg-card: #ffffff;
+
+  --text-primary-color: #1a1a1a;
+  --text-secondary-color: #4a4a4a;
+  --text-muted-color: #717171;
+  --text-focus-color: #003580;
+  --text-highlighted-color: #ff9f1c;
+
+  --border-primary-color: #dbdbdb;
+  --border-secondary-color: #eeeeee;
+  --border-muted-color: #f1f1f1;
+  --border-focus-color: #00b4d8;
+  --border-highlighted-color: #ff9f1c;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+
+  --transition: 0.3s ease;
+}
+
+/* =========================================================
+   GLOBAL BASE
+========================================================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-primary-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 0;
+  color: var(--brand-primary-color);
+}
+
+p {
+  color: var(--text-secondary-color);
+}
+
+/* =========================================================
+   GLOBAL BUTTON SYSTEM
+========================================================= */
+button, .link-button { 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition);
+  text-decoration: none;
+  background-color: var(--brand-primary-color);
+  color: white;
+}
+
+button:hover, .link-button:hover { 
+  background-color: var(--brand-secondary-color);
+  transform: translateY(-1px);
+}
+
+/* Button Sizes & Variants */
+.lg-button {
+  padding: 14px 28px;
+  font-size: 1.1rem;
+}
+
+.sm-button {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+}
+
+.tiny-button {
+  padding: 4px 8px;
+  font-size: 0.75rem;
+}
+
+.border-button {
+  background: transparent;
+  border: 2px solid var(--brand-primary-color);
+  color: var(--brand-primary-color);
+}
+
+/* =========================================================
+  NAVBAR (RESPONSIVE FLEX)
+========================================================= */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: var(--bg-card);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+nav > a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--brand-primary-color);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-secondary-color);
+  transition: var(--transition);
+}
+
+nav a:hover {
+  color: var(--brand-secondary-color);
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Mobile Nav Query */
+@media (max-width: 768px) {
+  .menu-toggle { display: flex; }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    z-index: 100;
+  }
+  nav ul.open { display: flex; }
+}
+
+/* =========================================================
+   CARD SYSTEM (CENTER ALIGNED)
+========================================================= */
+.card-container {
+  display: flex;              
+  flex-wrap: wrap;            
+  justify-content: center;    
+  gap: 25px;              
+  margin: 40px 10px;
+}
+
+.card {
+  display: flex;             
+  flex-direction: column;      
+  width: 320px;
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* =========================================================
+   FORM SYSTEM
+========================================================= */
+.form-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+form {
+  background: white;
+  padding: 30px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  width: 100%;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-primary-color);
+  border-radius: var(--radius-sm);
+  margin-top: 5px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--brand-secondary-color);
+}
+
+/* =========================================================
+   TABLE SYSTEM
+========================================================= */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+table {
+  width: 100%; /* Required 100% width */
+  border-collapse: collapse;
+  background: var(--bg-card);
+}
+
+table th {
+  background: var(--brand-primary-color);
+  color: white;
+  padding: 15px;
+  text-align: left;
+}
+
+table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--border-muted-color);
+}
+
+/* Alternating Row Colors */
+table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover Row Color Change */
+table tbody tr:hover {
+  background-color: #f0faff;
+}
+
+/* =========================================================
+   FOOTER SYSTEM
+========================================================= */
+footer {
+  background: var(--brand-primary-color);
+  color: white;
+  padding: 40px 5%;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--brand-third-color);
+}
