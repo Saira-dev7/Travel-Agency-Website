@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Travels | Explore the World</title>
+    <link rel="stylesheet" href="cssFile/globalStyles.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">GlobalTravels</a>
+        
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <span style="width: 25px; height: 3px; background: var(--brand-primary-color); display: block;"></span>
+            <span style="width: 25px; height: 3px; background: var(--brand-primary-color); display: block; margin: 4px 0;"></span>
+            <span style="width: 25px; height: 3px; background: var(--brand-primary-color); display: block;"></span>
+        </button>
+
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/services.html">Destinations</a></li>
+            <li><a href="pages/dashboard.html">My Bookings</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+            <li><a href="pages/login.html" class="link-button sm-button">Login</a></li>
+            <li><a href="pages/signup.html">Signup</a></li>
+        </ul>
+    </nav>
+
+    <header style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 80px 20px; background: linear-gradient(rgba(0,53,128,0.05), rgba(0,53,128,0.05));">
+        <h1 style="font-size: 3rem; margin-bottom: 10px;">Adventure Awaits</h1>
+        <p style="font-size: 1.2rem; max-width: 600px; margin-bottom: 25px;">Book unique tour packages and explore the most exotic destinations across the globe with GlobalTravels.</p>
+        <div style="display: flex; gap: 15px;">
+            <button class="lg-button">Explore Tours</button>
+            <button class="lg-button border-button">Learn More</button>
+        </div>
+    </header>
+
+    <section>
+        <h2 style="text-align: center; margin-top: 50px;">Popular Destinations</h2>
+        <div class="card-container">
+            
+            <div class="card">
+                <img src="sources/DestinationOne.PNG.png" alt="Destination One" style="height: 200px; object-fit: cover;">
+                <div class="card-content">
+                    <h3>Santorini, Greece</h3>
+                    <p>Experience the stunning blue domes and breathtaking sunset views of the Aegean Sea.</p>
+                    <a href="pages/services.html" class="link-button">Book Now</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="sources/DestinationTwo.PNG.png" alt="Destination Two" style="height: 200px; object-fit: cover;">
+                <div class="card-content">
+                    <h3>Kyoto, Japan</h3>
+                    <p>Step back in time and explore ancient temples, serene gardens, and traditional tea houses.</p>
+                    <a href="pages/services.html" class="link-button">Explore</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="sources/DestinationThree.PNG.png" alt="Destination Three" style="height: 200px; object-fit: cover;">
+                <div class="card-content">
+                    <h3>Swiss Alps</h3>
+                    <p>Adventure through the snow-capped peaks and enjoy world-class skiing and hiking.</p>
+                    <a href="pages/services.html" class="link-button">View Details</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div style="flex: 2;">
+                <h2>GlobalTravels</h2>
+                <p>Your premier travel partner for over 15 years. Making dreams come true, one destination at a time.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <a href="pages/services.html">All Tours</a><br>
+                <a href="pages/contact.html">Support</a><br>
+                <a href="pages/dashboard.html">Account</a>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Email: info@globaltravels.com</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+            <p>&copy; 2026 Global Travels Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="jsFile/jsFunctions.js"></script>
+</body>
+</html>
