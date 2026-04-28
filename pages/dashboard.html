@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard | GlobalTravels</title>
+    <link rel="stylesheet" href="../cssFile/globalStyles.css">
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html">GlobalTravels</a>
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <span style="width: 25px; height: 3px; background: var(--brand-primary-color); display: block;"></span>
+            <span style="width: 25px; height: 3px; background: var(--brand-primary-color); display: block; margin: 4px 0;"></span>
+            <span style="width: 25px; height: 3px; background: var(--brand-primary-color); display: block;"></span>
+        </button>
+        <ul id="nav-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="services.html">Destinations</a></li>
+            <li><a href="dashboard.html">My Bookings</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="link-button sm-button">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main style="padding: 40px 5%;">
+        <div style="margin-bottom: 30px;">
+            <h1>Welcome, Traveler!</h1>
+            <p>Manage your upcoming trips and viewing your booking history.</p>
+        </div>
+
+        <div class="table-container" style="max-width: 1000px; min-width: 600px; margin: 0 auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Booking Ref</th>
+                        <th>Destination</th>
+                        <th>Departure Date</th>
+                        <th>Travelers</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#GT-9920</td>
+                        <td>Santorini, Greece</td>
+                        <td>June 15, 2026</td>
+                        <td>02</td>
+                        <td style="color: green; font-weight: bold;">Confirmed</td>
+                    </tr>
+                    <tr>
+                        <td>#GT-1042</td>
+                        <td>Kyoto, Japan</td>
+                        <td>August 22, 2026</td>
+                        <td>01</td>
+                        <td style="color: var(--brand-third-color); font-weight: bold;">Pending</td>
+                    </tr>
+                    <tr>
+                        <td>#GT-8871</td>
+                        <td>Swiss Alps, Switzerland</td>
+                        <td>December 10, 2026</td>
+                        <td>04</td>
+                        <td style="color: green; font-weight: bold;">Confirmed</td>
+                    </tr>
+                    <tr>
+                        <td>#GT-7723</td>
+                        <td>Amalfi Coast, Italy</td>
+                        <td>May 14, 2026</td>
+                        <td>02</td>
+                        <td style="color: var(--text-muted-color);">Completed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="display: flex; gap: 20px; justify-content: center; margin-top: 50px;">
+            <div class="card" style="width: 250px; padding: 20px; text-align: center;">
+                <h4>Travel Credits</h4>
+                <p style="font-size: 1.5rem; font-weight: bold; color: var(--brand-fourth-color);">$450.00</p>
+                <button class="tiny-button">Redeem</button>
+            </div>
+            <div class="card" style="width: 250px; padding: 20px; text-align: center;">
+                <h4>Support Tickets</h4>
+                <p style="font-size: 1.5rem; font-weight: bold;">0 Active</p>
+                <button class="tiny-button border-button">Open New</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>GlobalTravels Dashboard</h3>
+                <p>Your portal to the world. We hope you're excited for your next journey!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../jsFile/jsFunctions.js"></script>
+</body>
+</html>

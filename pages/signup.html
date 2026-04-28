@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join GlobalTravels | Create Account</title>
+    <link rel="stylesheet" href="../cssFile/globalStyles.css">
+</head>
+<body style="background: linear-gradient(135deg, #003580 0%, #00b4d8 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px 0;">
+
+    <main class="form-container" style="padding: 0; width: 100%;">
+        <form style="max-width: 450px; margin: auto;">
+            <div style="text-align: center; margin-bottom: 25px;">
+                <h2 style="margin-bottom: 5px;">Create Your Account</h2>
+                <p style="font-size: 0.9rem;">Start your journey with us today</p>
+            </div>
+
+            <div style="display: flex; gap: 10px;">
+                <div style="flex: 1;">
+                    <label for="fName">First Name</label>
+                    <input type="text" id="fName" placeholder="First Name" required>
+                </div>
+                <div style="flex: 1;">
+                    <label for="lName">Last Name</label>
+                    <input type="text" id="lName" placeholder="Last Name" required>
+                </div>
+            </div>
+
+            <div>
+                <label for="regEmail">Email Address</label>
+                <input type="email" id="regEmail" placeholder="name@email.com" required>
+            </div>
+
+            <div>
+                <label for="regPass">Create Password</label>
+                <input type="password" id="regPass" placeholder="Min. 8 characters" required>
+            </div>
+
+            <div>
+                <label for="confirmPass">Confirm Password</label>
+                <input type="password" id="confirmPass" placeholder="Repeat password" required>
+            </div>
+
+            <div style="margin: 15px 0;">
+                <label style="font-size: 0.85rem; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="checkbox" style="width: auto; margin-top: 4px;" required>
+                    <span>I agree to the <a href="#" style="color: var(--brand-primary-color);">Terms of Service</a> and <a href="#" style="color: var(--brand-primary-color);">Privacy Policy</a>.</span>
+                </label>
+            </div>
+
+            <button type="submit" class="lg-button" style="width: 100%;">Sign Up Now</button>
+
+            <div style="text-align: center; margin-top: 20px; border-top: 1px solid var(--border-secondary-color); padding-top: 15px;">
+                <p style="font-size: 0.9rem;">Already have an account? 
+                    <a href="login.html" style="color: var(--brand-primary-color); font-weight: bold; text-decoration: none;">Login</a>
+                </p>
+                <a href="../index.html" style="font-size: 0.8rem; color: var(--text-muted-color); text-decoration: none;">&larr; Back to Home</a>
+            </div>
+        </form>
+    </main>
+
+    <script src="../jsFile/jsFunctions.js"></script>
+</body>
+</html>

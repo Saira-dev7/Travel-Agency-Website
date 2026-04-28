@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services & Tours | GlobalTravels</title>
+    <link rel="stylesheet" href="../cssFile/globalStyles.css">
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html">GlobalTravels</a>
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <span style="width: 25px; height: 3px; background: var(--brand-primary-color); display: block;"></span>
+            <span style="width: 25px; height: 3px; background: var(--brand-primary-color); display: block; margin: 4px 0;"></span>
+            <span style="width: 25px; height: 3px; background: var(--brand-primary-color); display: block;"></span>
+        </button>
+        <ul id="nav-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="services.html">Destinations</a></li>
+            <li><a href="dashboard.html">My Bookings</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="link-button sm-button">Login</a></li>
+        </ul>
+    </nav>
+
+    <section style="background: #ffffff; padding: 40px 5%; border-bottom: 1px solid var(--border-secondary-color);">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h2 style="margin-bottom: 10px;">Our Exclusive Tour Packages</h2>
+            <p style="margin-bottom: 30px;">Discover handcrafted experiences designed for every type of traveler.</p>
+            
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+                <input type="text" placeholder="Search destinations..." style="flex: 1; min-width: 200px; max-width: 400px;">
+                <select style="width: auto; min-width: 150px;">
+                    <option value="">All Categories</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="luxury">Luxury</option>
+                    <option value="family">Family Friendly</option>
+                </select>
+                <button class="sm-button">Find Tours</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="card-container">
+        
+        <div class="card">
+            <div style="position: relative;">
+                <img src="../sources/DestinationOne.PNG.png" alt="European Summer">
+                <span style="position: absolute; top: 10px; right: 10px; background: var(--brand-third-color); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">Best Seller</span>
+            </div>
+            <div class="card-content">
+                <h4 style="color: var(--brand-secondary-color); margin: 0;">8 Days / 7 Nights</h4>
+                <h3>Grand European Tour</h3>
+                <p>Visit London, Paris, and Rome in one seamless luxury experience with guided city tours.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                    <span style="font-size: 1.2rem; font-weight: bold;">$2,499</span>
+                    <button class="link-button sm-button">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../sources/DestinationTwo.PNG.png" alt="Bali Retreat">
+            <div class="card-content">
+                <h4 style="color: var(--brand-secondary-color); margin: 0;">5 Days / 4 Nights</h4>
+                <h3>Bali Spiritual Retreat</h3>
+                <p>Connect with nature in Ubud. Includes yoga sessions, private villa, and jungle trekking.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                    <span style="font-size: 1.2rem; font-weight: bold;">$1,150</span>
+                    <button class="link-button sm-button">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../sources/DestinationThree.PNG.png" alt="Iceland Adventure">
+            <div class="card-content">
+                <h4 style="color: var(--brand-secondary-color); margin: 0;">6 Days / 5 Nights</h4>
+                <h3>Iceland Northern Lights</h3>
+                <p>Chase the Aurora Borealis and relax in the Blue Lagoon. A true bucket-list adventure.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                    <span style="font-size: 1.2rem; font-weight: bold;">$1,800</span>
+                    <button class="link-button sm-button">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../sources/image2.png" alt="African Safari">
+            <div class="card-content">
+                <h4 style="color: var(--brand-secondary-color); margin: 0;">10 Days / 9 Nights</h4>
+                <h3>Kenyan Wildlife Safari</h3>
+                <p>Witness the Great Migration in the Maasai Mara with luxury tented camp accommodation.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                    <span style="font-size: 1.2rem; font-weight: bold;">$3,200</span>
+                    <button class="link-button sm-button">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer style="background-color: var(--brand-primary-color); padding-bottom: 20px;">
+        <div class="footer-container">
+            <div>
+                <h3>GlobalTravels</h3>
+                <p>Exploring the world responsibly since 2010. We specialize in making travel accessible and unforgettable.</p>
+            </div>
+            <div>
+                <h3>Traveler Tools</h3>
+                <a href="#">Visa Information</a><br>
+                <a href="#">Travel Insurance</a><br>
+                <a href="#">Flight Tracker</a>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+            <p style="font-size: 0.8rem;">&copy; 2026 Global Travels Agency | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../jsFile/jsFunctions.js"></script>
+</body>
+</html>

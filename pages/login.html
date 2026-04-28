@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | GlobalTravels</title>
+    <link rel="stylesheet" href="../cssFile/globalStyles.css">
+</head>
+<body style="background: linear-gradient(135deg, #003580 0%, #00b4d8 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+
+    <main class="form-container" style="padding: 0; width: 100%;">
+        <form style="max-width: 400px; margin: auto;">
+            <div style="text-align: center; margin-bottom: 25px;">
+                <h2 style="margin-bottom: 5px;">Welcome Back</h2>
+                <p style="font-size: 0.9rem;">Please enter your account details</p>
+            </div>
+
+            <div>
+                <label for="loginEmail">Email Address</label>
+                <input type="email" id="loginEmail" placeholder="name@email.com" required>
+            </div>
+
+            <div>
+                <label for="loginPass">Password</label>
+                <input type="password" id="loginPass" placeholder="••••••••" required>
+            </div>
+
+            <div style="flex-direction: row; justify-content: space-between; align-items: center; margin-top: 10px;">
+                <label style="font-size: 0.85rem; display: flex; align-items: center; gap: 5px;">
+                    <input type="checkbox" style="width: auto; margin: 0;"> Remember me
+                </label>
+                <a href="#" style="font-size: 0.85rem; color: var(--brand-secondary-color); text-decoration: none;">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="lg-button" style="width: 100%; margin-top: 20px;">Login to Account</button>
+
+            <div style="text-align: center; margin-top: 25px; border-top: 1px solid var(--border-secondary-color); padding-top: 20px;">
+                <p style="font-size: 0.9rem;">New to GlobalTravels? 
+                    <a href="signup.html" style="color: var(--brand-primary-color); font-weight: bold; text-decoration: none;">Sign Up</a>
+                </p>
+                <a href="../index.html" style="font-size: 0.8rem; color: var(--text-muted-color); text-decoration: none;">&larr; Back to Homepage</a>
+            </div>
+        </form>
+    </main>
+
+    <script src="../jsFile/jsFunctions.js"></script>
+</body>
+</html>
